@@ -23,6 +23,8 @@ public class Student {
 
     private Date birthDate;
 
+    private String userRole;
+
 
     @ManyToMany
     @JoinTable(
@@ -59,6 +61,9 @@ public class Student {
     public void setName(String name){
         this.name=name;
     }
+
+    public void setUserRole(String userRole) {this.userRole=userRole;}
+    public String getUserRole(String userRole) {return userRole;}
 
     public String getEmail(){
         return email;
